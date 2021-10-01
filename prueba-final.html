@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Demo</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css"
+        integrity="sha512-SUwyLkI1Wgm4aEZkDkwwigXaOI2HFLy1/YW73asun4sfvlkB9Ecl99+PHfCnfWD0FJjIuFTvWMM7BZPXCckpAA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <script type="text/javascript">
+        $(function () {
+            $("#contenido-funcionario").load("/funcionarios/gerencia-municipal.html");
+        });
+    </script> -->
+    
+    <link rel="preload" href="/css/style.css" as="style">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-3 col-xl-4 bd-sidebar">
+                <form role="search" class="bd-responsive d-flex align-items-center">
+                    <button class="btn btn-link d-md-none p-0 ml-3 collapsed" type="button" data-toggle="collapse"
+                        data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false"
+                        aria-label="Toggle docs navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 30 30" role="img" focusable="false">
+                            <title>Menu</title>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22">
+                            </path>
+                        </svg>
+                    </button>
+                </form>
+                
+                <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Main navigation">
+                    <div class="bd-toc-item active">
+                        <a class="bd-toc-link" href="/index.html">Funcionarios</a>
+                        <ul class="nav bd-sidenav">
+                            <li class="funcionario-link"><a href="#" class="gerencia-municipal">Gerencia Municipal</a></li>
+                            <li class="funcionario-link"><a href="#" class="procurador-publico-municipal">Procurador P&uacute;blico Municipal</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-secretaria-general">Subgerencia de Secretar&iacute;a General</a></li>
+                            <li class="funcionario-link"><a href="#" class="gerencia-de-administracion-y-finanzas">Gerencia de Administraci&oacute;n y Finanzas</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-logistica">Subgerencia de Log&iacute;stica</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-finanzas">Subgerencia de Finanzas</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-gestion-de-talento-humano">Subgerencia de Gesti&oacute;n de Talento Humano</a></li>
+                            <li class="funcionario-link"><a href="#" class="gerencia-de-planeamiento-presupuesto-e-inversiones">Gerencia de Planeamiento, Presupuesto E Inversiones</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-asesoria-juridica">Subgerencia de Asesor&iacute;a Jur&iacute;dica</a></li>
+                            <li class="funcionario-link"><a href="#" class="gerencia-de-administracion-tributaria">Gerencia de Administraci&oacute;n Tributaria</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-recaudacion-y-ejecucion-coactiva">Subgerencia de Recaudaci&oacute;n y Ejecuci&oacute;n Coactiva</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-registro-y-fiscalizacion-tributaria">Subgerencia de Registro y Fiscalizaci&oacute;n Tributaria</a></li>
+                            <li class="funcionario-link"><a href="#" class="gerencia-de-desarrollo-urbano">Gerencia de Desarrollo Urbano</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-autorizaciones-municipales">Subgerencia de Autorizaciones Municipales</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-gestion-del-riesgo-de-desastres">Subgerencia de Gesti&oacute;n Del Riesgo de Desastres</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-saneamiento-y-planeamiento-urbano">Subgerencia de Saneamiento y Planeamiento Urbano</a></li>
+                            <li class="funcionario-link"><a href="#" class="gerencia-de-ordenamiento-urbano">Gerencia de Ordenamiento Urbano</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-inspecciones-y-control-urbano">Subgerencia de Inspecciones y Control Urbano</a></li>
+                            <li class="funcionario-link"><a href="#" class="gerencia-de-inversiones-publicas">Gerencia de Inversiones P&uacute;blicas</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-estudios-y-proyectos">Subgerencia de Estudios y Proyectos</a></li>
+                            <li class="funcionario-link"><a href="#" class="gerencia-de-participacion-vecinal-y-desarrollo-social">Gerencia de Participaci&oacute;n Vecinal y Desarrollo Social</a></li>
+                            <li class="funcionario-link"><a href="#" class="gerencia-de-gestion-ambiental">Gerencia de Gesti&oacute;n Ambiental</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-parques-y-jardines">Subgerencia de Parques y Jardines</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-limpieza-publica">Subgerencia de Limpieza P&uacute;blica</a></li>
+                            <li class="funcionario-link"><a href="#" class="gerencia-de-salud">Gerencia de Salud</a></li>
+                            <li class="funcionario-link"><a href="#" class="gerencia-de-seguridad-ciudadana">Gerencia de Seguridad Ciudadana</a></li>
+                            <li class="funcionario-link"><a href="#" class="subgerencia-de-serenazgo">Subgerencia de Serenazgo</a></li>
+                        </ul>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <main class="col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+                <div class="fun gerencia-municipal">{article 1}{/article}</div>
+                <div class="fun procurador-publico-municipal">{article 2}{/article}</div>
+                <div class="fun subgerencia-de-secretaria-general">{article 3}{/article}</div>
+                <div class="fun gerencia-de-administracion-y-finanzas">{article 4}{/article}</div>
+                <div class="fun subgerencia-de-logistica">{article 5}{/article}</div>
+                <div class="fun subgerencia-de-finanzas">{article 6}{/article}</div>
+                <div class="fun subgerencia-de-gestion-de-talento-humano">{article 7}{/article}</div>
+                <div class="fun gerencia-de-planeamiento-presupuesto-e-inversiones">{article 8}{/article}</div>
+                <div class="fun subgerencia-de-asesoria-juridica">{article 9}{/article}</div>
+                <div class="fun gerencia-de-administracion-tributaria">{article 10}{/article}</div>
+                <div class="fun subgerencia-de-recaudacion-y-ejecucion-coactiva">{article 11}{/article}</div>
+                <div class="fun subgerencia-de-registro-y-fiscalizacion-tributaria">{article 12}{/article}</div>
+                <div class="fun gerencia-de-desarrollo-urbano">{article 13}{/article}</div>
+                <div class="fun subgerencia-de-autorizaciones-municipales">{article 14}{/article}</div>
+                <div class="fun subgerencia-de-gestion-del-riesgo-de-desastres">{article 15}{/article}</div>
+                <div class="fun subgerencia-de-saneamiento-y-planeamiento-urbano">{article 16}{/article}</div>
+                <div class="fun gerencia-de-ordenamiento-urbano">{article 17}{/article}</div>
+                <div class="fun subgerencia-de-inspecciones-y-control-urbano">{article 18}{/article}</div>
+                <div class="fun gerencia-de-inversiones-publicas">{article 19}{/article}</div>
+                <div class="fun subgerencia-de-estudios-y-proyectos">{article 20}{/article}</div>
+                <div class="fun gerencia-de-participacion-vecinal-y-desarrollo-social">{article 21}{/article}</div>
+                <div class="fun gerencia-de-gestion-ambiental">{article 22}{/article}</div>
+                <div class="fun subgerencia-de-parques-y-jardines">{article 23}{/article}</div>
+                <div class="fun subgerencia-de-limpieza-publica">{article 24}{/article}</div>
+                <div class="fun gerencia-de-salud">{article 25}{/article}</div>
+                <div class="fun gerencia-de-seguridad-ciudadana">{article 26}{/article}</div>
+                <div class="fun subgerencia-de-serenazgo">{article 27}{/article}</div>
+
+                <!-- <div>{article #}{/article}</div> -->
+            </main>
+        </div>
+    <script type="text/javascript">
+        let elementos = document.getElementsByClassName("funcionario-link");
+        for (let i = 0; i < elementos.length; i++) {
+            elementos.item(i).addEventListener("click", function(event){
+                elementos.item(i).classList.add("active")
+                elementos.item(i).classList.add("bd-sidenav-active");
+
+                let linkShow = elementos.item(i).querySelector("a").getAttribute("class")
+                let show = document.getElementsByClassName("fun " + linkShow)
+                
+                for (let j = 0; j < elementos.length; j++) {
+                    if ((elementos.item(j).classList.contains("active") || elementos.item(j).classList.contains("bd-sidenav-active")) && j != i) {
+                        elementos.item(j).classList.remove("active");
+                        elementos.item(j).classList.remove("bd-sidenav-active");
+                    }
+                    let linkHide = elementos.item(j).querySelector("a").getAttribute("class")
+                    let hide = document.getElementsByClassName("fun " + linkHide)
+                    hide.item(0).style.display = 'none'
+                }
+                show.item(0).style.display = 'block';
+            });
+        }
+    </script>
+    </div>
+</body>
+
+</html>
