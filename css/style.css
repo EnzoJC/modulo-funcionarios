@@ -23,6 +23,13 @@
 			height: calc(100vh);
 		}
 	}
+	.icono-nombre{
+		display: inline-block;
+	}
+	/* .nombre > p{
+		text-transform: capitalize;
+		text-transform: lowercase;
+	} */
 }
 
 @media (min-width: 1200px) {
@@ -58,6 +65,12 @@
 		position: relative;
 		padding: 1rem 0;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	}
+	.icono-nombre{
+		display: none;
+	}
+	.nombre > p{
+		text-transform: uppercase;
 	}
 }
 

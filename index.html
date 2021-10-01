@@ -86,7 +86,6 @@
 
             <main class="col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
                 <div id="contenido-funcionario"></div>
-                <!-- <div>{article #}{/article}</div> -->
             </main>
         </div>
     </div>
@@ -94,7 +93,6 @@
         $("li.funcionario-link").click(function(){
             $(this).addClass("active bd-sidenav-active").siblings().removeClass("active bd-sidenav-active");
             $("#contenido-funcionario").load("/funcionarios/" + $(this).find('a').attr('class') + ".html");
-            // document.getElementById('contenido-funcionario').innerHTML = '{article #}{/article}'
         })
     </script>
 </body>
