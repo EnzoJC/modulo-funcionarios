@@ -19,12 +19,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css"
         integrity="sha512-SUwyLkI1Wgm4aEZkDkwwigXaOI2HFLy1/YW73asun4sfvlkB9Ecl99+PHfCnfWD0FJjIuFTvWMM7BZPXCckpAA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <script type="text/javascript">
-        $(function () {
-            $("#contenido-funcionario").load("/funcionarios/gerencia-municipal.html");
-        });
-    </script>
     
     <link rel="preload" href="/css/style.css" as="style">
     <link rel="stylesheet" href="/css/style.css">
@@ -94,6 +88,9 @@
             $(this).addClass("active bd-sidenav-active").siblings().removeClass("active bd-sidenav-active");
             $("#contenido-funcionario").load("/funcionarios/" + $(this).find('a').attr('class') + ".html");
         })
+        $(function () {
+            $("#contenido-funcionario").load("/funcionarios/gerencia-municipal.html");
+        });
     </script>
 </body>
 
